@@ -6,17 +6,65 @@
     <title>Meu Projeto Bootstrap</title>
     <!-- Adicione os links para os arquivos CSS do Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Adicione os links para os arquivos CSS do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Adicione os links para as fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet"> -->
+    <style>
+        .container-fluid {
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('assets/images/woodwork_background.jpeg');
+            background-size: cover;
+            
+        }
+
+        #btnHeader:hover {
+            color: white !important;
+            background-color: black;
+            
+        }
+    </style>
 </head>
 <body>
-    <!-- Adicione o conteúdo do seu site aqui -->
+    <!-- Criar um banner com a logo da empresa uma mensagem de efeito e um botão de rolar para baixo -->
+    <div class="container-fluid pb-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="assets/images/generic_logo.png" class="img-fluid" alt="Logo da empresa" style="max-width: 250px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4 text-center" style="font-weight: 400;">Bem-vindo ao nosso site</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="lead text-center">Aqui você encontra os melhores produtos para o seu lar</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="#produtos" id="btnHeader" class="btn btn-lg" style="border: 1.5px solid black; color: black;">Conheça nossos produtos</a>
+            </div>
+        </div>
+    </div>
+    <!-- create float button on page for contact via whatsapp -->
+    <a
+        href="https://api.whatsapp.com/send?phone=5511987654321"
+        class="btn btn-success rounded-circle position-fixed btn-lg"
+        style="bottom: 20px; right: 20px"
+        ><i class="fab fa-whatsapp"></i
+    ></a>
+
     
+
     <!-- Adicione os scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-<div class="container">
-    <h1>Welcome to my Bootstrap project!</h1>
-    <p>This is the content of my website.</p>
-</div>
