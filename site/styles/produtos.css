@@ -5,6 +5,9 @@
     padding-top: 5%; /* Vertical padding */
     padding-bottom: 5%; /* Vertical padding */
     background-color: white;
-   
-    
+}
+
+#produtos {
+    background: linear-gradient(-120deg, black 50%,whitesmoke 50%,whitesmoke 50.2%, black 50.2%, black 52.2%,whitesmoke 52.2%,whitesmoke 52.4%, black 52.4%, black 53.2%,whitesmoke 53.2%);
+    background-size: cover;
 }
