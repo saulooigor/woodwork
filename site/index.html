@@ -111,14 +111,14 @@
                         <li data-target="#carouselProdutos" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="" class="d-block w-100" alt="Sofá 1">
+                        <div class="carousel-item active" style="max-height: 460px;">
+                            <img src="assets/images/office/desk_1.jpeg" class="d-block w-100" alt="Produto 1">
                         </div>
-                        <div class="carousel-item">
-                            <img src="" class="d-block w-100" alt="Mesa 1">
+                        <div class="carousel-item" style="max-height: 460px;">
+                            <img src="assets/images/office/desk_2.jpeg" class="d-block w-100" alt="Produto 2">
                         </div>
-                        <div class="carousel-item">
-                            <img src="" class="d-block w-100" alt="Cama 1">
+                        <div class="carousel-item" style="max-height: 460px;">
+                            <img src="assets/images/office/desk_3.jpeg" class="d-block w-100" alt="Produto 3">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
@@ -148,10 +148,10 @@
         let carousel = document.querySelector("#carouselProdutos");
         let imagens = carousel.querySelectorAll("img");
         let imagensPath = {
-            "living_room": [
-                "assets/images/living_room/sofa_1.jpeg",
-                "assets/images/living_room/sofa_2.jpeg",
-                "assets/images/living_room/sofa_3.jpeg",
+            "bedroom": [
+                "assets/images/bedroom/bedroom_1.jpeg",
+                "assets/images/bedroom/bedroom_2.jpeg",
+                "assets/images/bedroom/bedroom_3.jpeg",
             ],
             "kitchen": [
                 "assets/images/kitchen/kitchen_1.jpeg",
@@ -172,8 +172,8 @@
                     opcao.style.backgroundColor = "white";
                     opcao.style.color = "black";
                 });
-                opcao.style.backgroundColor = "gray";
-                opcao.style.color = "white";
+                opcao.style.backgroundColor = "lightgray";
+                opcao.style.color = "black";
                 let tipo = opcao.getAttribute("data-option"); // Obtenha o valor do atributo data-option
                 let imagensTipo = imagensPath[tipo]; // Use esse valor para obter as imagens corretas
                 imagens.forEach((imagem, index) => {
