@@ -12,28 +12,17 @@
     
     <!-- acrescentar o css produtos da pasta styles -->
     <link rel="stylesheet" href="styles/produtos.css">
+    <link rel="stylesheet" href="styles/header.css">
+    
 
     <!-- Adicione os links para as fontes do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet"> -->
-    <style>
-        .container-fluid {
-            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('assets/images/woodwork_background.jpeg');
-            background-size: cover;
-            
-        }
-
-        #btnHeader:hover {
-            color: white !important;
-            background-color: black;
-            
-        }
-    </style>
 </head>
 <body>
     <!-- Criar um banner com a logo da empresa uma mensagem de efeito e um botão de rolar para baixo -->
-    <div class="container-fluid pb-4">
+    <div class="container-fluid pb-4" id="header">
         <div class="row">
             <div class="col-12 text-center">
                 <img src="assets/images/generic_logo.png" class="img-fluid" alt="Logo da empresa" style="max-width: 250px;">
@@ -56,7 +45,7 @@
         </div>
     </div>
     <!-- create 3 columns with 1 image and 1 text align center -->
-    <div class="container py-2">
+    <div class="container py-5">
         <div class="row">
             <div class="col-12 col-md-4 text-center">
                 <img src="assets/images/icone_produtos.png" class="img-fluid" alt="Sofá" style="max-width: 40%;">
@@ -76,7 +65,7 @@
         </div>
     </div>
     <!-- create a section with two columns where first has a title "Nossos Produtos" and a list with products and second has a carousel with many images of products -->
-    <div class="container py-2" id="produtos">
+    <div class="container-fluid py-2" id="produtos">
         <div class="row">
             <div class="col-12 col-md-6">
                 <h2 class="text-center mt-2">Nossos Produtos</h2>
