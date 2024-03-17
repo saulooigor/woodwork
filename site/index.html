@@ -72,32 +72,32 @@
                 <!-- create a grid with icon from font awesome and text about items: cadeira, armario, mesa, cozinha, escritorio -->
                 <div class="row my-4">
                     <div class="col-6 text-center opcaoTipo my-1">
-                        <div class="container">
-                            <i class="fas fa-tv fa-beat fa-2x d-block mx-auto"></i>
+                        <div class="container" data-option="living-room">
+                            <i class="fas fa-tv fa-pulse fa-2x d-block mx-auto"></i>
                             <p class="text-center">Sala de Estar</p>
                         </div>
                     </div>
                     <div class="col-6 text-center opcaoTipo my-1">
-                        <div class="container">
-                            <i class="fas fa-bed fa-beat fa-2x d-block mx-auto"></i>
+                        <div class="container" data-option="bedroom">
+                            <i class="fas fa-bed fa-pulse fa-2x d-block mx-auto"></i>
                             <p class="text-center">Quarto</p>
                         </div>
                     </div>
                     <div class="col-6 text-center opcaoTipo my-1">
-                        <div class="container">
-                            <i class="fas fa-utensils fa-beat fa-2x d-block mx-auto"></i>
+                        <div class="container" data-option="dining-room">
+                            <i class="fas fa-utensils fa-pulse fa-2x d-block mx-auto"></i>
                             <p class="text-center">Sala de Jantar</p>
                         </div>
                     </div>
                     <div class="col-6 text-center opcaoTipo my-1">
-                        <div class="container">
-                            <i class="fas fa-coffee fa-beat fa-2x d-block mx-auto"></i>
+                        <div class="container" data-option="kitchen">
+                            <i class="fas fa-coffee fa-pulse fa-2x d-block mx-auto"></i>
                             <p class="text-center">Cozinha</p>
                         </div>
                     </div>
                     <div class="col-12 text-center opcaoTipo my-1">
-                        <div class="container">
-                            <i class="fas fa-laptop fa-beat fa-2x d-block mx-auto"></i>
+                        <div class="container" data-option="office">
+                            <i class="fas fa-laptop fa-pulse fa-2x d-block mx-auto"></i>
                             <p class="text-center">Escritório</p>
                         </div>
                     </div>
@@ -112,13 +112,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/images/office/desk_1.jpeg" class="d-block w-100" alt="Sofá 1">
+                            <img src="" class="d-block w-100" alt="Sofá 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/office/desk_2.jpeg" class="d-block w-100" alt="Mesa 1">
+                            <img src="" class="d-block w-100" alt="Mesa 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/office/desk_3.jpeg" class="d-block w-100" alt="Cama 1">
+                            <img src="" class="d-block w-100" alt="Cama 1">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselProdutos" role="button" data-slide="prev">
@@ -142,7 +142,56 @@
         ><i class="fab fa-whatsapp"></i
     ></a>
 
-    
+    <!-- criar um codigo javascript para que quando clicar uma das divs tipoOpcao, a cor de fundo mude para cinza e o texto para branco e as imagens do carousel sejam alteradas para de acordo com as imagens que existem na pasta de acordo com o tipo de opção escolhida -->
+    <script>
+        let opcoes = document.querySelectorAll(".opcaoTipo .container");
+        let carousel = document.querySelector("#carouselProdutos");
+        let imagens = carousel.querySelectorAll("img");
+        let imagensPath = {
+            "living_room": [
+                "assets/images/living_room/sofa_1.jpeg",
+                "assets/images/living_room/sofa_2.jpeg",
+                "assets/images/living_room/sofa_3.jpeg",
+            ],
+            "kitchen": [
+                "assets/images/kitchen/kitchen_1.jpeg",
+                "assets/images/kitchen/kitchen_2.jpeg",
+                "assets/images/kitchen/kitchen_3.jpeg",
+            ],
+            "office": [
+                "assets/images/office/desk_1.jpeg",
+                "assets/images/office/desk_2.jpeg",
+                "assets/images/office/desk_3.jpeg",
+            ]
+            // Adicione as outras categorias aqui...
+        };
+
+        opcoes.forEach((opcao, index) => {
+            opcao.addEventListener("click", () => {
+                opcoes.forEach((opcao) => {
+                    opcao.style.backgroundColor = "white";
+                    opcao.style.color = "black";
+                });
+                opcao.style.backgroundColor = "gray";
+                opcao.style.color = "white";
+                let tipo = opcao.getAttribute("data-option"); // Obtenha o valor do atributo data-option
+                let imagensTipo = imagensPath[tipo]; // Use esse valor para obter as imagens corretas
+                imagens.forEach((imagem, index) => {
+                    imagem.src = imagensTipo[index]; // Atualize o src das imagens
+                });
+            });
+        });
+
+        let btnHeader = document.querySelector("#btnHeader");
+        btnHeader.addEventListener("click", () => {
+            window.scrollTo({
+                top: 800,
+                behavior: "smooth",
+            });
+        });
+
+
+    </script>
 
     <!-- Adicione os scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
