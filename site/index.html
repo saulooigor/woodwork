@@ -13,6 +13,7 @@
     <!-- acrescentar o css produtos da pasta styles -->
     <link rel="stylesheet" href="styles/produtos.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/info.css">
 
     <!-- Adicione os links para as fontes do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -136,17 +137,36 @@
     <!-- secao de onde estamos localizados com duas colunas, onde a primeira apresenta os dados com o endereço e o segundo um mapa com a localização do google maps -->
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <h2 class="text-center"><i class="fas fa-map-marker-alt" style="color: gray"></i> Onde estamos localizados</h2>
-                <p class="text-center">Rua dos Bobos, nº 0, Bairro da Lapa, São Paulo - SP</p>
-                <p class="text-center">CEP: 00000-000</p>
-                <p class="text-center">Telefone: (11) 1234-5678</p>
-                <p class="text-center">E-mail:
-                    <a href="mailto:saulo.igor.alves@gmail.com">saulo.igor.alves@gmail.com</a>
-                </p>
+            <div class="col-12 col-md-6 py-4 text-end d-flex flex-column justify-content-between" id="text-info">
+                <div>
+                    <h2><i class="fas fa-map-marker-alt" style="color: gray"></i> Onde estamos localizados</h2>
+                    <p class="mt-5 mr-3">Rua dos Bobos, nº 0</p>
+                    <p class="mr-3"> Bairro da Lapa, São Paulo - SP</p>
+                    <p class="mr-3">CEP: 00000-000</p>
+                    <p class="mr-3">Telefone: (11) 1234-5678</p>
+                    <p class="mr-3 mb-3 mb-md-0">E-mail:
+                        <a href="mailto:saulo.igor.alves@gmail.com">saulo.igor.alves@gmail.com</a>
+                    </p>
+                </div>
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-6 my-4 my-md-0">
+                            <a href="https://api.whatsapp.com/send?phone=5511987654321" id="btn-whatsapp" style="color: #32a852; border: 3px solid #32a852;">
+                                <i class="fab fa-whatsapp"></i>
+                                WHATSAPP
+                            </a>
+                        </div>
+                        <div class="col-md-6 my-4 my-md-0">
+                            <a href="https://www.instagram.com/" id="btn-instagram" style="color: #c700af; border: 3px solid #c700af;">
+                                <i class="fab fa-instagram"></i>
+                                INSTAGRAM
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.073394394073!2d-46.68807368502147!3d-23.55051968467914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b8b0f3d3d3f%3A0x8e3e3e3e3e3e3e3e!2sRua%20dos%20Bobos%2C%20n%C2%BA%200%20-%20Bairro%20da%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2000000-000!5e0!3m2!1spt-BR!2sbr!4v1601550730003!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.073394394073!2d-46.68807368502147!3d-23.55051968467914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b8b0f3d3d3f%3A0x8e3e3e3e3e3e3e3e!2sRua%20dos%20Bobos%2C%20n%C2%BA%200%20-%20Bairro%20da%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2000000-000!5e0!3m2!1spt-BR!2sbr!4v1601550730003!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
