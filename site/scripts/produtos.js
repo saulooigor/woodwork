@@ -17,6 +17,16 @@ let imagensPath = {
         "assets/images/office/desk_1.jpeg",
         "assets/images/office/desk_2.jpeg",
         "assets/images/office/desk_3.jpeg",
+    ],
+    "living-room": [
+        "assets/images/living-room/living_room_1.jpeg",
+        "assets/images/living-room/living_room_2.jpeg",
+        "assets/images/living-room/living_room_3.jpeg",
+    ],
+    "dining-room": [
+        "assets/images/dining-room/dining_room_1.jpeg",
+        "assets/images/dining-room/dining_room_2.jpeg",
+        "assets/images/dining-room/dining_room_3.jpeg",
     ]
     // Adicione as outras categorias aqui...
 };

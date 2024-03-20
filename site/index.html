@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="styles/produtos.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/info-video.css">
 
     <!-- Adicione os links para as fontes do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    
 </head>
 <body>
     <!-- Criar um banner com a logo da empresa uma mensagem de efeito e um botão de rolar para baixo -->
@@ -134,8 +135,72 @@
         </div>
     </div>
 
-    <!-- secao de onde estamos localizados com duas colunas, onde a primeira apresenta os dados com o endereço e o segundo um mapa com a localização do google maps -->
+    <!-- secao onde teremos os parceiros da empresa, clientes sendo apresentados de forma dinamica sem utilizar o carousel -->
     <div class="container py-5">
+        <h2 class="text-center">Nossos Parceiros</h2>
+        <div class="row">
+            <div class="col-12 col-md-3 text-center my-3">
+                <img src="assets/images/partners/partner_generic_1.png" class="img-fluid" alt="Parceiro 1">
+            </div>
+            <div class="col-12 col-md-3 text-center my-3">
+                <img src="assets/images/partners/partner_generic_2.png" class="img-fluid" alt="Parceiro 2">
+            </div>
+            <div class="col-12 col-md-3 text-center my-3">
+                <img src="assets/images/partners/partner_generic_3.png" class="img-fluid" alt="Parceiro 3">
+            </div>
+            <div class="col-12 col-md-3 text-center my-3">
+                <img src="assets/images/partners/partner_generic_4.png" class="img-fluid" alt="Parceiro 4">
+            </div>
+        </div>
+    </div>
+
+    <!-- secao onde apresentara o header_video numa coluna e em outra coluna vamos apresentar um checklist de qualidades dos nossos serviços -->
+    <div class="container-fluid py-5" id="publi">
+        <div class="row">
+            <div class="col-12 col-md-6" id="info-video">
+                <video id="header_video" class="img-fluid" autoplay loop muted>
+                    <source src="assets/videos/header_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+                <div class="container">
+                    <h2 class="text-center">Por que escolher a nossa empresa?</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox1" checked>
+                                <label class="form-check-label" for="checkbox1">Qualidade reconhecida dos produtos</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox2" checked>
+                                <label class="form-check-label" for="checkbox2">Variedade nos produtos</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox3" checked>
+                                <label class="form-check-label" for="checkbox3">Serviço personalizado, atendendo a sua necessidade</label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkbox4" checked>
+                                <label class="form-check-label" for="checkbox4">Utilizando os melhores recursos para entregas no menor tempo possível</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- secao de onde estamos localizados com duas colunas, onde a primeira apresenta os dados com o endereço e o segundo um mapa com a localização do google maps -->
+    <div class="container-fluid py-5">
         <div class="row">
             <div class="col-12 col-md-6 py-4 text-end d-flex flex-column justify-content-between my-3 my-md-0" id="text-info">
                 <div>
