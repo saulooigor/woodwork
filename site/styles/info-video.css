@@ -44,7 +44,7 @@
     margin: 0;
     opacity: 0;
     -appearance: none;
-    -webkit-appearance: none;
+    
   }
   .checkbox-wrapper-31 input[type=checkbox]:hover {
     cursor: pointer;
