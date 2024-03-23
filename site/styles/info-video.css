@@ -59,3 +59,13 @@
     stroke-dashoffset: 0;
   }
 
+  #info-video{
+    background: linear-gradient(
+      -60deg,
+      white 4%,
+      black 4%,
+      black 96%,
+      whitesmoke 96%
+    );
+  }
+
