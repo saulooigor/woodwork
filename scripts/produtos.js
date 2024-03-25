@@ -56,4 +56,6 @@ btnHeader.addEventListener("click", () => {
 });
 
 
-    
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+});
